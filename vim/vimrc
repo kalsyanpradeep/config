@@ -1,0 +1,26 @@
+" Instruct VIM to run files and scripts found in those paths
+set runtimepath+=~/.config/vim,~/.config/vim/after
+set viminfo+=n~/.config/vim/viminfo
+
+syntax on
+
+" Set colorscheme
+set background=dark
+colorscheme habamax
+
+" Restore transparency
+autocmd VimEnter * hi! Normal guibg=NONE
+set termguicolors
+
+
+
+
+" Avoid creating files in home directories
+" We can also avoid them 
+" set noswapfile
+set directory=~/.config/vim/swap//,.,~/tmp,/var/tmp,/tmp
+" set nobackup
+set backupdir=~/.config/vim/backup//,.,~/tmp,~/
+" set noundofile
+set undodir=~/.config/vim/undo//,.
+
