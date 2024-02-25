@@ -1,4 +1,4 @@
-import = ["/Users/pradeep/.config/alacritty/themes/themes/github_dark.toml"]
+import = ["~/.config/alacritty/themes/themes/github_dark.toml"]
 
 [bell]
 animation = "EaseOutExpo"
